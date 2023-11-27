@@ -1,3 +1,5 @@
+package atividade2;
+
 import java.util.*;
 
 public class PessoaMain {
@@ -9,19 +11,19 @@ public class PessoaMain {
         int opcao = 0;
         while (opcao != 15) {
             System.out.println("  -- Menu -- ");
-            System.out.println("1 - Cadastrar Aluno");
-            System.out.println("2 - Cadastrar Notas de Um Aluno");
-            System.out.println("3 - Calcular a Média do Aluno");
+            System.out.println("1 - Cadastrar atividade2.Aluno");
+            System.out.println("2 - Cadastrar Notas de Um atividade2.Aluno");
+            System.out.println("3 - Calcular a Média do atividade2.Aluno");
             System.out.println("4 - Calcular a Média da Disciplina");
             System.out.println("5 - Registrar Nova Falta");
             System.out.println("6 - Consultar o Total de Faltas");
             System.out.println("7 - Listar os Alunos");
             System.out.println("8 - Listar as Notas e Médias da Disciplina");
-            System.out.println("9 - Cadastrar Professor");
-            System.out.println("10 - Alterar a Situação do Professor(Ativo/Inativo)");
+            System.out.println("9 - Cadastrar atividade2.Professor");
+            System.out.println("10 - Alterar a Situação do atividade2.Professor(Ativo/Inativo)");
             System.out.println("11 - Listar os Professores");
-            System.out.println("12 - Cadastrar as Disciplinas de Um Professor");
-            System.out.println("13 - Listar as Disciplinas de Um Professor");
+            System.out.println("12 - Cadastrar as Disciplinas de Um atividade2.Professor");
+            System.out.println("13 - Listar as Disciplinas de Um atividade2.Professor");
             System.out.println("14 - Buscar Professores que Lecionam Uma Disciplina");
             System.out.println("15 - Sair\n");
             System.out.println("Informe uma opção:");
@@ -127,11 +129,11 @@ public class PessoaMain {
         }
 
         if (aluno.getNotas().isEmpty()) {
-            System.out.println("Aluno não tem nota cadastrada!");
+            System.out.println("atividade2.Aluno não tem nota cadastrada!");
             return;
         }
 
-        System.out.println("Média do Aluno: " + Aluno.calculaMedia(aluno));
+        System.out.println("Média do atividade2.Aluno: " + Aluno.calculaMedia(aluno));
     }
 
     static void mediaDisciplina() {
@@ -175,7 +177,7 @@ public class PessoaMain {
     static void listarAlunos() {
         System.out.println("Lista de Alunos:");
         for (int i = 0; i < listaAlunos.size(); i++) {
-            System.out.println("Aluno " + (i+1) + ": " + listaAlunos.get(i).getNome());
+            System.out.println("atividade2.Aluno " + (i+1) + ": " + listaAlunos.get(i).getNome());
         }
     }
 
@@ -251,7 +253,7 @@ public class PessoaMain {
     static void listarProfessores() {
         System.out.println("Lista de Professores:");
         for (int i = 0; i < listaProfessores.size(); i++) {
-            System.out.println("Professor " + (i+1) + ": ");
+            System.out.println("atividade2.Professor " + (i+1) + ": ");
             System.out.println("Nome: " + listaProfessores.get(i).getNome());
             System.out.println("Matrícula: " + listaProfessores.get(i).getMatricula());
             System.out.println(consultarSituacaoDeUmProfessor(listaProfessores.get(i)));
