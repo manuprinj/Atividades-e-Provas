@@ -1,0 +1,55 @@
+1) (1,0 ponto) Considerando o uso de vetores e matrizes, julgue as
+afirmativas abaixo:
+(F) Por meio do uso de vetores é possível se criar listas de dados
+do mesmo tipo, as quais não podem ter mais de uma
+dimensão.
+(F) Matrizes são estruturas com apenas uma dimensão que
+permitem o armazenamento de múltiplos dados de tipos
+distintos. Essa estrutura permite uma modelagem mais
+organizada da aplicação.
+(V) Considerando uma aplicação prática, uma matriz poderia ser
+utilizada para armazenamento do desempenho de um piloto
+em uma corrida de automóveis. Neste sentido, poderia-se
+definir que cada linha corresponde a um piloto diferente e
+cada coluna ao registro de uma volta completa no circuito.
+(V) Um vetor poderia ser utilizado quando deseja-se organizar os
+clientes que estão aguardando atendimento em uma agência
+bancária, neste sentido, cada cliente ocupa uma posição,
+garantindo a ordem de atendimento.
+(F) As matrizes não são amplamente utilizadas em aplicações
+computacionais, especialmente quando trata-se de
+processamento de imagens, geração de rotas, estimação de
+posição entre outras aplicações práticas.
+
+2) (1,0 ponto) Considerando seus conhecimentos acerca da
+propriedade de Herança em orientação a objetos, explique se é
+possível utilizar este conceito quando desejamos implementar uma
+aplicação que detalhe a dieta dos animais de um zoológico. Caso
+seja possível descreva qual seria a classe abstrata e as classes
+filhas, caso não seja, justifique sua resposta.
+
+Sim, daria para criar uma classe Animal, onde poderia ter os atributos: Nome, Raça, Quantidade de Patas.
+E depois criar as classes pertinentes a alimentação dos animais, por exemplo:
+Classe Carnivoros, onde teria o atributo iscarnivoro = true, quantidadeEmGramas, qtdeDeVezesQueDeveSerAlimentado, precisaRoupaProtecao.
+Classe Herbívoros, onde teria o atributo isHerbivoro = true, tipoPlanta.
+
+3) (1,0 ponto) Considerando seus conceitos acerca de herança e
+listas, correlacione as colunas abaixo:
+(d) retorna o tamanho de um vetor, ou seja, quantos
+elementos ele pode receber.
+
+(e) retorna a posição de um elemento em uma lista,
+caso ele exista.
+
+(a) função utilizada para acessar métodos da
+classe pai.
+
+(c) descreve a classe pai, da qual se derivam
+outras classes.
+
+(f) verifica se um determinado objeto existe em
+uma lista, retorna verdadeiro caso exista.
+
+(b) retorna a quantidade de elementos inseridos em
+uma lista.
+

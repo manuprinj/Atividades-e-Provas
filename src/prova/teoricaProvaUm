@@ -1,0 +1,50 @@
+1) (0,5 ponto) A seguir são apresentadas algumas opções e entre elas
+marque as que NÃO caracterizam os pilares da Programação
+Orientada a Objetos:
+a) ( ) Polimorfismo;
+b) (X) Boas Práticas;
+c) ( ) Herança;
+d) (X) Métodos e Classes;
+e) ( ) Abstração;
+f) ( ) Encapsulamento;
+
+2) (0,5 ponto) Em POO as classes representam a estrutura de
+um objeto, ou seja, seus comportamentos e características.
+
+3) (0,5 ponto) Os métodos representam ações(procedimentos) que
+podem ser desenvolvidos por uma classe. Considerando a
+propriedade de sobrecarga de métodos, discorra os seus
+conhecimentos sobre e de um exemplo de uso.
+Resposta:
+É um recurso que permite que seja usado o mesmo nome no método, entretanto com assinaturas(parâmetros) diferentes.
+Exemplo:
+    public static int inputInt(String mensagem1, String mensagem2) {
+        Integer valor = null;
+        while (valor == null) {
+            System.out.println(mensagem1);
+	    System.out.println(mensagem2);
+            try {
+                valor = Integer.parseInt(SCANNER.nextLine());
+            } catch (Exception e) {
+                System.out.println(VALOR_INVALIDO);
+            }
+        }
+        return valor;
+    }
+
+E
+    public static int inputInt(String mensagem) {
+        Integer valor = null;
+        while (valor == null) {
+            System.out.println(mensagem);
+            try {
+                valor = Integer.parseInt(SCANNER.nextLine());
+            } catch (Exception e) {
+                System.out.println(VALOR_INVALIDO);
+            }
+        }
+        return valor;
+    }
+
+Note que no primeiro eu preciso passar duas mensagens no parâmetro, e no segundo apenas uma, ou seja, esse pode ser considerado uma sobrecarga, onde eu tenho dois métodos com o mesmo nome, entretanto a assinatura de ambos são diferentes.
+
