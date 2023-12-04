@@ -1,4 +1,4 @@
-package atividade1;
+package atividadePratica2011.atividade1;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package atividade2;
+package atividadePratica2011.atividade2;
 
 public class Pessoa {
     private String nome;
